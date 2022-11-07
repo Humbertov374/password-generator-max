@@ -27,9 +27,10 @@ function generatePassword() {
   // WHEN all prompts are answered
   // THEN a password is generated that matches the selected criteria
   // WHEN the password is generated
+var password = prompt("Congratulation your password is now ...")
   // THEN the password is either displayed in an alert or written to the page
 
-  return "Hello Humberto";
+  return "Password Acquired";
 }
 
 // Write password to the #password input
