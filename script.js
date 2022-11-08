@@ -1,4 +1,12 @@
 // Assignment code here
+// return a random integer ranging from min to max
+function randomInt(min, max) {
+  // if 'max' is not defined, assume we want range from 0 to min
+  if (!max) {
+    max = min
+    min = 0
+  }
+}
 
 
 // Get references to the #generate element
@@ -40,7 +48,7 @@ while (true) {
 
     // an empty array where the user's selected options will be stored
     let selectedPasswordOptions = []
-    
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
