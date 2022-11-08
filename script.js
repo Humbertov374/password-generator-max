@@ -38,6 +38,9 @@ while (true) {
       newPasswordOption("numbers", getRandomNumber),
     ]
 
+    // an empty array where the user's selected options will be stored
+    let selectedPasswordOptions = []
+    
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
