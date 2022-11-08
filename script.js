@@ -30,6 +30,14 @@ while (true) {
       }
     }
 
+     // list of existing password options
+     let passwordOptions = [
+      newPasswordOption("uppercase letters", getRandomLetterUpper),
+      newPasswordOption("lowercase letters", getRandomLetterLower),
+      newPasswordOption("symbols", getRandomSymbol),
+      newPasswordOption("numbers", getRandomNumber),
+    ]
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
