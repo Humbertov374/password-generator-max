@@ -6,6 +6,42 @@ function randomInt(min, max) {
     max = min
     min = 0
   }
+
+  // interpolate random value
+  let rand = Math.random()
+  return Math.floor(min*(1 - rand) + rand*max)
+  }
+  
+  // return a random entry from a list
+  function getRandomIndex(list) {
+  return list[randomInt(list.length)]
+  }
+  
+  // prompt the user for a specified value, and a given condition function
+  function promptUserForInputType(inputType, message, isValidCondition) {
+  let userInput = window.prompt(message)
+  let isValidType
+  
+  let inputObject = {
+    // value:...
+    // isValidType:...
+    // isValidCondition:...
+    canceled: userInput === null
+  }
+  
+  // validate input for number type
+  if (inputType === "number") {
+    userInput = parseInt(userInput)
+    isValidType = !isNaN(userInput)
+  }
+  
+  // assign object fields
+  inputObject.isValidType = isValidType
+  inputObject.value = userInput
+  inputObject.isValidCondition = isValidType && isValidCondition(userInput)
+  
+  return inputObject
+  
 }
 
 
