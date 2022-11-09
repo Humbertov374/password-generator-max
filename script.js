@@ -41,8 +41,17 @@ function randomInt(min, max) {
   inputObject.isValidCondition = isValidType && isValidCondition(userInput)
   
   return inputObject
-  
+
 }
+
+// create a new passwordOption object
+function newPasswordOption(name, generator) {
+  return {
+    name: name,
+    generate: generator,
+  }
+  }
+
 
 
 // Get references to the #generate element
