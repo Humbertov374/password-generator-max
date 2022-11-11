@@ -6,4 +6,6 @@ This web application allows you to generate a random password based on your own 
 
 Time for your new password!!!
 
+(click on the picture below)
+
 <a href="https://humbertov374.github.io/password-generator-max/"><img src="./assets/512x512bb.jpg">
